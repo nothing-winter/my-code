@@ -19,3 +19,7 @@ db.createUser(
 参数传递基本上就是赋值操作  
 引用提供了改变自身方法的引用类型（可以修改对象） 
 https://www.zhihu.com/question/31203609
+
+#Mysql 空字符不敏感
+
+当select * from Player where name = "A "时，会获得A
