@@ -22,3 +22,14 @@ https://www.zhihu.com/question/31203609
 
 # Mysql 空字符不敏感
 当select * from Player where name = "A "时，会获得A
+
+# Spring BeanPostProcessor加载顺序
+BeanPostProcessor 分为三层 
+*   第一层为实现org.springframework.core.PriorityOrdered接口
+*   第二层为实现org.springframework.core.Ordered接口
+*   第三层为余下的BeanPostProcessor  
+
+只有同层的BeanPostProcessor创建完了才会进行Processor注册       
+当BeanPostProcessor引用了普通Bean，将在创建BeanPostProcessor时创建普通Bean
+加载顺序源码org.springframework.context.support.PostProcessorRegistrationDelegate#registerBeanPostProcessors(
+			ConfigurableListableBeanFactory beanFactory, AbstractApplicationContext applicationContext)
