@@ -1,4 +1,15 @@
 # my-code
+
+## git 使用svn 仓库
+
+git svn clone svn://127.0.0.1/xxx/xxx --username=xxx
+
+git config --global core.autocrlf true 
+
+Git可以在你提交时自动地把行结束符CRLF转换成LF，而在签出代码时把LF转换成CRLF。用core.autocrlf来打开此项功能，如果是在Windows系统上，把它设置成true，这样当签出代码时，LF会被转换成CRLF:
+
+
+
 ### Linux下Mysql 大小写敏感
 ### 线上出现Bug 先寻找有没有类似问题,再估计影响范围，寻找解决方法，修复bug
 
