@@ -44,3 +44,7 @@ BeanPostProcessor 分为三层
 当BeanPostProcessor引用了普通Bean，将在创建BeanPostProcessor时创建普通Bean
 加载顺序源码org.springframework.context.support.PostProcessorRegistrationDelegate#registerBeanPostProcessors(
 			ConfigurableListableBeanFactory beanFactory, AbstractApplicationContext applicationContext)
+
+#awk
+在windows下使用 && 需要转义 ^&^&
+			
