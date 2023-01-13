@@ -1,5 +1,12 @@
 # my-code
 
+## 线上超时问题排查
+   >排查内存是否已达到最大
+   
+   >内存占满情况下，业务超时，存在处理业务时，GC线程抢夺CPU导致业务超时
+   
+   >内存不占满，cpu不冲高的，检查业务逻辑
+
 ## git 使用svn 仓库
 
 git svn clone svn://127.0.0.1/xxx/xxx --username=xxx
